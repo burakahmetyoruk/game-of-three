@@ -1,0 +1,18 @@
+server:
+  port: 8082
+
+spring:
+  cloud:
+    stream:
+      bindings:
+        playerListenerQueue:
+          destination: player1
+        playerSenderQueue:
+          destination: player2
+        gameQueue:
+          destination: game
+        clientQueue:
+          destination: client
+
+game:
+  manual: ${IS_MANUAL:true}

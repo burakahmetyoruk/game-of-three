@@ -1,0 +1,22 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        playerListenerQueue:
+          destination: player2
+        playerSenderQueue:
+          destination: player1
+        gameQueue:
+          destination: game
+        clientQueue:
+          destination: client
+server:
+  port: 8090
+
+client:
+  queue:
+    names:
+      clientQueue: clientQueue
+      gameQueue: gameQueue
+      playerListenerQueue: playerListenerQueue
+      playerSenderQueue: playerSenderQueue
