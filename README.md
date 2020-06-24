@@ -11,6 +11,15 @@
 *  Spring Cloud Stream use `RabbitMQ` as binder
 *  Docker to run `RabbitMQ`
 
+### Events
+
+Application | Event | Queue |
+------------ | ------------- | ------------- |
+server | GameStarted | client |
+client | PlayerJoined | game |
+server | GameEnded | client |
+server | PlayerMoved | player2 |
+client | PlayerMoved | player1 |
 
 ### Prerequisites to run locally
 ```
