@@ -12,11 +12,3 @@ spring:
           destination: client
 server:
   port: 8090
-
-client:
-  queue:
-    names:
-      clientQueue: clientQueue
-      gameQueue: gameQueue
-      playerListenerQueue: playerListenerQueue
-      playerSenderQueue: playerSenderQueue

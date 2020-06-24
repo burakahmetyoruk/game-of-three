@@ -5,22 +5,22 @@ import org.springframework.cloud.stream.annotation.Output;
 import org.springframework.messaging.MessageChannel;
 import org.springframework.messaging.SubscribableChannel;
 
+import static com.got.server.config.QueueNames.CLIENT_QUEUE;
+import static com.got.server.config.QueueNames.GAME_QUEUE;
+import static com.got.server.config.QueueNames.PLAYER_LISTENER_QUEUE;
+import static com.got.server.config.QueueNames.PLAYER_SENDER_QUEUE;
+
 public interface QueueProcessor {
-    String clientQueue = "clientQueue";
-    String gameQueue= "gameQueue";
-    String playerListenerQueue= "playerListenerQueue";
-    String playerSenderQueue= "playerSenderQueue";
 
-
-    @Input(playerListenerQueue)
+    @Input(PLAYER_LISTENER_QUEUE)
     SubscribableChannel playerListener();
 
-    @Input(gameQueue)
+    @Input(GAME_QUEUE)
     SubscribableChannel game();
 
-    @Output(playerSenderQueue)
+    @Output(PLAYER_SENDER_QUEUE)
     MessageChannel playerSender();
 
-    @Output(clientQueue)
+    @Output(CLIENT_QUEUE)
     MessageChannel client();
 }

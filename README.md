@@ -23,8 +23,8 @@
 ```
 1. git clone https://github.com/burakahmetyoruk/game-of-three
 2. Open terminal at the folder of source code.
-3. to run `Server` execute command `start-server.sh`
-4. to run `Client` execute command `start-client.sh`
+3. to run `Server` execute command in terminal `start-server.sh`
+4. to run `Client` execute command in new terminal `start-client.sh`
 ```
 
 ```
