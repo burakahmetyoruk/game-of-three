@@ -1,17 +1,16 @@
 # Game Of Three
-```
-    * A two Spring Boot application  which allows two players to play  Game of Three. 
-    * Game has two mode (Auto / Manual), you can easily set play mode in `start-server.sh`
-    * It is implemented with event-driven approach by using spring-cloud-stream-binder-rabbit.
-```
+
+- A two Spring Boot application  which allows two players to play  Game of Three. 
+- Game has two mode (Auto / Manual), you can easily set play mode in `start-server.sh`
+- It is implemented with event-driven approach by using spring-cloud-stream-binder-rabbit.
 
 ## Technical information
 ### Back End
-```
-* Java 11
-* Spring Cloud Stream use `RabbitMQ` as binder
-* Docker to run `RabbitMQ`
- ```
+
+*  Java 11
+*  Spring Cloud Stream use `RabbitMQ` as binder
+*  Docker to run `RabbitMQ`
+
 
 ### Prerequisites to run locally
 ```
